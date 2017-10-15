@@ -53,3 +53,4 @@ refine_data$product_smartphone <- dummy_gen(refine_data$product_category,c_smart
 refine_data$product_tv <- dummy_gen(refine_data$product_category,c_tv) 
 refine_data$product_laptop <- dummy_gen(refine_data$product_category,c_laptop)
 refine_data$product_tablet <- dummy_gen(refine_data$product_category,c_tablet)
+write.csv(refine_data, file = "refine_clean.csv")
